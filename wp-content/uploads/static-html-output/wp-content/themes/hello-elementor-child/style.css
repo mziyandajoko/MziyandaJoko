@@ -1,0 +1,215 @@
+/*
+Theme Name: MziyandaJokoBlogSite
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Mziyanda Joko
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Description: A plain-vanilla &amp; lightweight theme for Elementor page builder
+Tags: flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 2.3.1.1619682216
+Updated: 2021-04-29 07:43:36
+
+*/
+
+:root{
+	--color-gold: #FEB400;
+	--color-black: #000;
+	--color-white: #fff;
+}
+/* NAVBAR STYLING */
+.elementor-item:hover{
+	font-weight: bold !important;
+}
+.elementor-item-active{
+		font-weight: bold !important;
+}
+
+/* UTILITY STAYILING */
+
+.display-none{
+	display:none;
+	transition:all 350ms ease-in-out;
+	position: absolute !important;
+	bottom: 20px;
+	left:0px;
+/* 	padding: 0px 5px; */
+}
+.cardContainer{
+	position: relative !important;
+}
+.cardContainer:hover .display-none{
+	display:block;
+	background-image: linear-gradient(to bottom,  #FFFFFF00, #FEB400F0, #feb400) !important;
+}
+
+/* BUTTONS */
+.ae-post-list-wrapper{
+	position: relative !important;
+}
+.loadMoreBtn-label{
+	position: absolute !important;
+	left: 43%;
+	right: 0px;
+	bottom:0px;
+	width: 15%;
+	border: 1px white solid !important;
+    padding: 11px !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins' !important;
+}
+.ae-post-list-wrapper:last-child{
+	padding-bottom: 50px;
+}
+
+#custom_button--black{
+	text-align: center;
+	font-family: Poppins;
+	color: var(--color-black) !important;
+	font-size: 20px;	
+	border: 1px solid var(--color-black) !important;
+	color: white;
+	background-color: transparent !important;
+	border-radius: 0px;
+}
+#custom_button--black:hover{
+		color: var(--color-white) !important;
+	background-color: var(--color-gold) !important;
+	border: 1px solid var(--color-gold) !important;
+}
+
+#custom_button{
+	text-align: center;
+	font-family: Poppins;
+	letter-spacing: 0.8px;
+	color: #FFFFFF;
+	font-size: 20px;	
+	border: 1px solid white;
+	color: white;
+	background-color: transparent;
+	border-radius: 0px;
+}
+
+#custom_button:hover{
+	border: 1px solid var(--color-gold);
+	background-color: var(--color-gold);
+	color: var(--color-black);	
+}
+
+.border_bottom::after{
+	position: absolute;
+	border-bottom: 2px solid var(--color-gold);
+	width: 20px;
+	content:"";
+	bottom: 5px;
+	left: 0px;
+}
+.border-bottom:hover{
+	border-bottom: 30px solid transparent;
+}
+#custom_button--black{
+	text-align: center;
+	font-family: Poppins;
+	letter-spacing: 0.8px;
+	color: #FFFFFF;
+	font-size: 20px;	
+	border: 1px solid var(--color-black);
+	color: white;
+	background-color: var(--color-black);
+	border-radius: 0px;
+}
+/* AE CAROUSEL OVERRIDES */
+.aep-filter-bar{
+	margin-bottom: 4rem;
+	padding-bottom: 1rem !important;
+}
+.ae-post-layout-carousel .ae-carousel-yes .ae-swiper-slide {
+    height: auto;
+    padding-bottom: 3rem;
+}
+.elementor-73 .elementor-element.elementor-element-680c08e .swiper-pagination-bullet {
+    height: 3px !important;
+    padding: 2px 16px !important;
+	-webkit-border-radius: 0px !important; 
+     border-radius: 0px !important;
+}
+
+.ae-element-post-image .ae-element-post-image:hover{
+    left: 0px !important;
+    top: -10px !important;
+}
+.cardContainer{
+	transition:all 350ms ease-in-out;
+	position: relative;
+}
+.cardContainer:hover{
+	transform:translatey(-10px);
+	
+}
+.aep-filter-bar{
+	border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.filter-items{
+	transition:all 350ms ease-in-out;
+	position: relative;
+}
+
+
+.page-id-13, .page-id-73 {
+	color: white !important;
+}
+
+.page-id-15 nav ul li a{
+	color: black !important;
+}
+.page-id-15 nav ul li a:hover{
+	color: black !important;
+}
+
+.elementor-nav-menu:hover:after {
+    content: "\00a0";
+    display: block;
+    height: 0;
+    font: 0/0 serif;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+    color: red !important;
+}
+
+/* BLOG PAGE STYLING */
+.page-id-13 .ae-element-post-title{
+    color: white !important;
+}
+.page-id-13 .ae-element-post-date{
+	color: var(--color-gold) !important;
+}
+
+/* FILTER HOVER STYING  */
+/* .HoverUnderlining */
+.elementor-widget-container{
+	z-index: -1
+}
+.aep-filter-bar{
+	position:relative;
+
+}
+.aep-filter-bar a:hover::after{
+	position: absolute;
+	border-bottom: 4px solid var(--color-white);
+	width: 85px;
+	content:"";
+	top: 40px;
+	left: 10px;
+	z-index: 2;	
+	display:block;
+}
+/* .aep-filter-bar a .active{
+	position: absolute;
+	border-bottom: 4px solid var(--color-white);
+	width: 85px;
+	content:"";
+/* 	top: 0px; */
+	left: 0px;
+	right: 0px;
+} */
