@@ -1,0 +1,11 @@
+				@font-face {
+					font-family: 'bembo';
+					src: url('/jokowebsite/wp-content/uploads/useanyfont/2402bembo.woff2') format('woff2'),
+						url('/jokowebsite/wp-content/uploads/useanyfont/2402bembo.woff') format('woff');
+				}
+
+				.bembo{font-family: 'bembo' !important;}
+
+				.et_gf_bembo{background:none !important;font-family:bembo;text-indent:0 !important;font-size:25px;}
+
+		
